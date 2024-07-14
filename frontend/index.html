@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS - AI</title>
+</head>
+<body>
+
+    <!--<div id="video-div">
+        <video id="video" width="400" height="480" autoplay></video>
+        <canvas id="canvas" width="400" height="480" style="display: none;"></canvas>
+    </div>-->
+
+    <div class="titles">
+        <h1 id="head-title">Rock, Paper, Scissors</h1>
+        <h2 id="round-title">Round <span>5</span></h2>
+    </div>
+    
+    <div id="main">
+
+        <div class="player-card">
+            <div class="card">
+                <h3>Player 1</h3>
+                <div id="video-div">
+                    <video id="video" width="320" height="220" autoplay></video>
+                    <canvas id="canvas" width="320" height="220" style="display: none;"></canvas>
+                </div>
+                <img id="user-emoji-img" src="./images/fist-em-removebg-preview.png" width="140" height="100" alt="">
+                <p id="userChoseSentence">You chose: <span></span></p>
+            </div>
+            <p id="player-score"></p>
+        </div>
+
+        <p id="result"></p>
+
+        <div class="computer-card">
+            <div class="card">
+                <h3>Computer</h3>
+                <img id="computer-emoji-img" src="./images/pc.png" width="140" height="100" alt="">
+                <p>Computer chose: <span></span></p>
+            </div>
+            <p id="computer-score"></p>
+        </div>
+    </div>
+
+    <div class="next-btn-div">
+        <button id="nextBtn">Start Game</button>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
